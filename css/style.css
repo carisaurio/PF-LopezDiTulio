@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #090909 !important;
+}
+
+@font-face {
+    font-family: "KB Bubblegum";
+    src: url("../recursos/typo/KBbubblegum.ttf");
+}
+
+@font-face {
+    font-family: "Delius Swash Caps";
+    src: url("../recursos/DeliusSwashCaps-Regular.ttf")
+}
+
+
+nav ul a {
+    font-family: "KB Bubblegum";
+    text-transform: uppercase;
+    list-style-type: none;
+    color: #EDC8DC;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul {
+    color: #EDC8DC;
+}
+
+img {
+    width: 300px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 900px;
+    font-size: 20px;
+}
+
+#logo {
+    width: 200px;
+}
+
+.banner {
+    width: 1210px;
+}
+
+.links {
+    color: #DFC8E8;
+    text-decoration: none;
+}
+
+h1 {
+    color: #edc8dc;
+    font-family: "KB Bubblegum";
+    text-align: center;
+    font-size: 28px;
+}
+
+h2 {
+    border: 3px solid #EDC8DC;
+    border-radius: 40px;
+    padding: 30px;
+    margin: 50px;
+    height: 20px;
+    width: 900px;
+    text-align: center;
+    color: #EDC8DC;
+    font-family: "Delius Swash Caps";
+    font-size: 22px;
+    line-height: 0.2
+}
+
+hr {
+    width: 90%;
+    border: 1.5px solid #edc8dc;
+}
+
+h3 {
+    font-family: 'KB Bubblegum';
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: double;
+    color: #DFC8E8;
+}
+
+p {
+    font-family: "Delius Swash Caps";
+    color: #EDC8DC;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    text-align: center;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    height: 260px
+}
+
+.centrado {
+    text-align: center;
+}
+
+.tiposdejuguetes {
+    color: #EDC8DC;
+    font-family: "KB Bubblegum";
+    text-transform: uppercase;
+    display: grid;
+    justify-content: center;
+    margin-left: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.8fr 1fr 1fr 0.7fr 1fr;
+    grid-template-areas:
+        "sec1 sec2 sec3 sec4"
+        "sec5 sec6 sec7 sec8";
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 240px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 260px;
+
+}
+
+.mas-vendidos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    font-family: "KB Bubblegum";
+    color: #EDC8DC;
+    text-align: left;
+}
+
+
+.sec1 {
+    grid-area: sec1;
+}
+
+.sec2 {
+    grid-area: sec2;
+}
+
+.sec3 {
+    grid-area: sec3;
+}
+
+.sec4 {
+    grid-area: sec4;
+}
+
+.sec5 {
+    grid-area: sec5;
+}
+
+.sec6 {
+    grid-area: sec6;
+}
+
+.sec7 {
+    grid-area: sec7;
+}
+
+.sec8 {
+    grid-area: sec8;
+}
+
+
+ul li {
+    font-family: "KB Bubblegum";
+    text-transform: uppercase;
+    color: #DFC8E8;
+
+}
+
+ul li a {
+    font-family: "KB Bubblegum";
+    text-transform: uppercase;
+    color: #DFC8E8;
+
+}
+
+
+form input {
+    position: relative;
+    width: 600px;
+    margin: 5px;
+    border: 1px solid #ec86bd;
+}
+
+form input[type="submit"] {
+    padding: 8px 16px;
+    margin-top: 22px;
+    border: 1px solid #ec86bd;
+    border-radius: 3px;
+    color: white;
+    background-color: #EDC8DC;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
+
+footer ul {
+    color: #EDC8DC;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner-toys {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 800px;
+}
+
+.compras-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    align-items: center;
+}
+
+.juguetes-sexuales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 250px;
+    align-items: center;
+}
+
+.boton {
+    border: 2px solid #DFC8E8;
+    border-radius: 3px;
+    padding: 8px;
+    color: #DFC8E8;
+}
+
+.card-title {
+    text-align: left;
+}
+
+.card-text {
+    text-align: left;
+    margin: 0px;
+    padding: 20px;
+}
+
+.slider-centrado {
+    margin: auto;
+    width: 30%;
+}
+
+/* AL FINAL SIEMPRE */
+
+@media (max-width: 768px) {
+    .tiposdejuguetes {
+        display: grid;
+        grid-template-rows: (4, 1fr);
+        grid-template-areas:
+            "sec1 sec1 sec5 sec5"
+            "sec2 sec2 sec6 sec6"
+            "sec3 sec3 sec7 sec7"
+            "sec4 sec4 sec8 sec8";
+    }
+}
+
+@media (max-width: 375px) {
+    .tiposdejuguetes {
+        display: grid;
+        grid-template-rows: (8, 1fr);
+        grid-template-areas:
+            "sec1 sec1 sec1 sec1"
+            "sec2 sec2 sec2 sec2"
+            "sec3 sec3 sec3 sec3"
+            "sec4 sec4 sec4 sec4"
+            "sec5 sec5 sec5 sec5"
+            "sec6 sec6 sec6 sec6"
+            "sec7 sec7 sec7 sec7"
+            "sec8 sec8 sec8 sec8";
+    }
+}
