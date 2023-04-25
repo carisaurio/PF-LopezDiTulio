@@ -35,7 +35,7 @@ nav ul {
 }
 
 img {
-    width: 300px;
+    width: 100%;
 }
 
 .bg-body-tertiary {
@@ -112,7 +112,7 @@ h2 {
     width: 900px;
     text-align: center;
     color: #EDC8DC;
-    font-family: "Delius Swash Caps";
+    font-family: "Delius Swash Caps", "KB Bubblegum";
     font-size: 22px;
     line-height: 0.2;
     display: flex;
@@ -135,7 +135,7 @@ h3 {
 }
 
 p {
-    font-family: "Delius Swash Caps";
+    font-family: "Delius Swash Caps", "KB Bubblegum";
     color: #EDC8DC;
     margin-left: 10%;
     margin-right: 10%;
@@ -160,10 +160,11 @@ p {
     font-family: "KB Bubblegum";
     text-transform: uppercase;
     display: grid;
-    justify-content: center;
+    justify-content: space-around;
     margin-left: 10px;
     margin-right: 10px;
     padding: 50px;
+    grid-column-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
         "sec1 sec2 sec3 sec4"
@@ -202,42 +203,48 @@ p {
 
 .sec1 {
     grid-area: sec1;
-    width: 100%;
 }
 
 .sec2 {
     grid-area: sec2;
-    width: 100%;
 }
 
 .sec3 {
     grid-area: sec3;
-    width: 100%;
 }
 
 .sec4 {
     grid-area: sec4;
-    width: 100%;
 }
 
 .sec5 {
     grid-area: sec5;
-    width: 100%;
 }
 
 .sec6 {
     grid-area: sec6;
-    width: 100%;
 }
 
 .sec7 {
     grid-area: sec7;
-    width: 100%;
 }
 
 .sec8 {
     grid-area: sec8;
+}
+
+.categoria-juguetes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
     width: 100%;
+}
+
+span{
+    display: inline-block;
+    margin-top: 10px;
+
 }
 
 
@@ -245,6 +252,7 @@ ul li {
     font-family: "KB Bubblegum";
     text-transform: uppercase;
     color: #DFC8E8;
+    
 
 }
 
@@ -386,6 +394,11 @@ footer ul {
         padding: 20px;
     }
 
+    .mas-vendidos {
+        display: flex;
+        flex-direction: column;
+    }
+
     .banner {
         width: 85%;
     }
@@ -402,17 +415,13 @@ footer ul {
         width: 90%;
         font-size: 20px;
     }
-}
+
 
     h2 {
         width: 80%;
         line-height: 1
     }
 
-    .mas-vendidos {
-        display: flex;
-        flex-direction: column;
-    }
 
     .cartas {
         display: flex;
@@ -420,33 +429,32 @@ footer ul {
         justify-content: space-around;
         padding: 20px;
         align-items: center;
+    }
+}
 
 
+@media (max-width: 375px) {
+    .tiposdejuguetes {
+        display: grid;
+        grid-template-rows: (8, 1fr);
+        grid-template-areas:
+            "sec1 sec1 sec1 sec1"
+            "sec2 sec2 sec2 sec2"
+            "sec3 sec3 sec3 sec3"
+            "sec4 sec4 sec4 sec4"
+            "sec5 sec5 sec5 sec5"
+            "sec6 sec6 sec6 sec6"
+            "sec7 sec7 sec7 sec7"
+            "sec8 sec8 sec8 sec8";
+
+        width: 100%;
+        margin-left: 2px;
+        margin-right: 2px;
+        padding: 2px;
     }
 
-
-    @media (max-width: 375px) {
-        .tiposdejuguetes {
-            display: grid;
-            grid-template-rows: (8, 1fr);
-            grid-template-areas:
-                "sec1 sec1 sec1 sec1"
-                "sec2 sec2 sec2 sec2"
-                "sec3 sec3 sec3 sec3"
-                "sec4 sec4 sec4 sec4"
-                "sec5 sec5 sec5 sec5"
-                "sec6 sec6 sec6 sec6"
-                "sec7 sec7 sec7 sec7"
-                "sec8 sec8 sec8 sec8";
-
-            width: 100%;
-            margin-left: 2px;
-            margin-right: 2px;
-            padding: 2px;
-        }
-
-        h2 {
-            padding: 22px;
-            font-size: 16px;
-        }
+    h2 {
+        padding: 22px;
+        font-size: 16px;
     }
+}
