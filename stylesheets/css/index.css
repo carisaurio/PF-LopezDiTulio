@@ -33,6 +33,16 @@ h1 {
   font-size: 30px;
 }
 
+@font-face {
+  font-family: KB Bubblegum;
+  src: url("../../recursos/typo/KBbubblegum.ttf");
+}
+
+@font-face {
+  font-family: "Delius Swash Caps";
+  src: url("../../recursos/typo/DeliusSwashCaps-Regular.ttf");
+}
+
 h2 {
   border: 3px solid #EDC8DC;
   border-radius: 40px;

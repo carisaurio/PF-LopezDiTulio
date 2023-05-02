@@ -1,3 +1,5 @@
+@import url("../../recursos/typo/KBbubblegum.ttf");
+
 * {
     margin: 0;
     padding: 0;
@@ -19,13 +21,18 @@ img {
     width: 100%;
 }
 
+@font-face {
+    font-family: KB Bubblegum;
+    src: url("../../recursos/typo/KBbubblegum.ttf");
+}
+
 h1 {
     color: $clubsipink;
-    font-family: "KB Bubblegum", cursive;
+    font-family: KB Bubblegum;
     text-align: center;
     font-size: 28px;
     font-size: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }
 
 .products-title {
