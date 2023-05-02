@@ -1,0 +1,35 @@
+
+    nav {
+        
+        ul {
+            color: #EDC8DC;
+    
+            a {
+                font-family: "KB Bubblegum";
+                text-transform: uppercase;
+                list-style-type: none;
+                color: #EDC8DC;
+            }
+    
+            li {
+                display: inline;
+            }
+        }
+    }
+    
+    .nav-link {
+        color: #DFC8E8;
+    }
+    
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: #dfc8e8;
+    }
+    
+    .navbar-nav {
+        --bs-nav-link-hover-color: rgba(255, 184, 229, 0.85);
+    }
+    
+    .navbar-toggler {
+        background-color: #dfc8e8;
+    }

@@ -1,0 +1,21 @@
+.form-contact {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+    input {
+        margin: 5px;
+        border: 1px solid #ec86bd;
+        width: 100%;
+        text-align: center;
+    }
+
+    input[type="submit"] {
+        padding: 8px 16px;
+        margin-top: 22px;
+        border: 1px solid #ec86bd;
+        border-radius: 3px;
+        color: white;
+        background-color: #EDC8DC;
+    }
+}

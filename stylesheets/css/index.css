@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #090909 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  color: #edc8dc;
+  font-family: "KB Bubblegum", cursive;
+  text-align: center;
+  font-size: 28px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.products-title {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+h2 {
+  border: 3px solid #EDC8DC;
+  border-radius: 40px;
+  width: 900px;
+  text-align: center;
+  color: #EDC8DC;
+  font-family: "Delius Swash Caps", "KB Bubblegum";
+  font-size: 22px;
+  line-height: 0.2;
+  padding: 22px;
+}
+
+h3 {
+  font-family: "KB Bubblegum";
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-style: double;
+  color: #DFC8E8;
+}
+
+p {
+  font-family: "Delius Swash Caps", "KB Bubblegum";
+  color: #EDC8DC;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+ul li {
+  font-family: "KB Bubblegum";
+  text-transform: uppercase;
+  color: #DFC8E8;
+}
+ul li a {
+  font-family: "KB Bubblegum";
+  text-transform: uppercase;
+  color: #DFC8E8;
+}
+
+span {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#logo {
+  width: 200px;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: #090909 !important;
+}
+
+.parpadeo {
+  animation: parpadeo-animation 0.8s steps(15, start) infinite, color-animation 2s ease-in-out infinite;
+}
+
+@keyframes parpadeo-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes color-animation {
+  0% {
+    color: #edc8dc;
+  }
+  50% {
+    color: #e55aa2;
+  }
+  100% {
+    color: #edc8dc;
+  }
+}
+.form-contact {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.form-contact input {
+  margin: 5px;
+  border: 1px solid #ec86bd;
+  width: 100%;
+  text-align: center;
+}
+.form-contact input[type=submit] {
+  padding: 8px 16px;
+  margin-top: 22px;
+  border: 1px solid #ec86bd;
+  border-radius: 3px;
+  color: white;
+  background-color: #EDC8DC;
+}
+
+.btn:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: #dfc8e8;
+  border-color: #dfc8e8;
+}
+
+.btn-outline-success {
+  --bs-btn-color: #dfc8e8;
+  --bs-btn-border-color: #dfc8e8;
+  --bs-btn-hover-bg: #dfc8e8;
+  --bs-btn-hover-border-color: #dfc8e8;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #edc8dc;
+  --bs-btn-active-border-color: #edc8dc;
+}
+
+.btn-primary {
+  border: 2px solid #DFC8E8;
+  background-color: #090909;
+  border-radius: 3px;
+  padding: 8px;
+  color: #DFC8E8;
+}
+
+.btn-primary {
+  border: 2px solid #DFC8E8;
+  background-color: #090909;
+  border-radius: 3px;
+  padding: 8px;
+  color: #DFC8E8;
+}
+
+.card {
+  font-family: "KB Bubblegum";
+  color: #EDC8DC;
+  background-color: #090909;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-body {
+  text-align: center;
+}
+.card-body p {
+  text-align: center;
+  margin: 0px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  color: #EDC8DC;
+}
+nav ul a {
+  font-family: "KB Bubblegum";
+  text-transform: uppercase;
+  list-style-type: none;
+  color: #EDC8DC;
+}
+nav ul li {
+  display: inline;
+}
+
+.nav-link {
+  color: #DFC8E8;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #dfc8e8;
+}
+
+.navbar-nav {
+  --bs-nav-link-hover-color: rgba(255, 184, 229, 0.85);
+}
+
+.navbar-toggler {
+  background-color: #dfc8e8;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 170px;
+  padding-top: 30px;
+  border-top: 3px solid rgba(169, 169, 169, 0.4117647059);
+  color: #EDC8DC;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.banner {
+  display: block;
+  margin: auto;
+}
+
+.mas-vendidos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.banner-toys {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0px 50px 0;
+}
+.banner-toys .links {
+  color: #f17cca;
+}
+
+.info-inicio {
+  border-top: 3px solid rgba(169, 169, 169, 0.4117647059);
+  padding: 30px 0 30px 0;
+  margin: 30px 0 30px 0;
+  text-align: center;
+}
+.info-inicio :first-child {
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+
+.section-styles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 1100px) {
+  .mas-vendidos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .mas-vendidos .card {
+    flex-basis: 50%;
+  }
+  .banner {
+    width: 85%;
+  }
+  .banner-toys {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    width: 80%;
+    line-height: 1;
+  }
+}
+@media (max-width: 525px) {
+  h2 {
+    padding: 22px;
+    font-size: 16px;
+  }
+  .mas-vendidos {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+.sec1 {
+  grid-area: sec1;
+}
+
+.sec2 {
+  grid-area: sec2;
+}
+
+.sec3 {
+  grid-area: sec3;
+}
+
+.sec4 {
+  grid-area: sec4;
+}
+
+.sec5 {
+  grid-area: sec5;
+}
+
+.sec6 {
+  grid-area: sec6;
+}
+
+.sec7 {
+  grid-area: sec7;
+}
+
+.sec8 {
+  grid-area: sec8;
+}
+
+.tiposdejuguetes {
+  color: #EDC8DC;
+  font-family: "KB Bubblegum";
+  text-transform: uppercase;
+  display: grid;
+  justify-content: space-around;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 50px;
+  grid-column-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "sec1 sec2 sec3 sec4" "sec5 sec6 sec7 sec8";
+}
+
+.categoria-juguetes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.juguetes-sexuales {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.juguetes-sexuales h3 {
+  margin-top: 20px;
+}
+
+@media (max-width: 1100px) {
+  .tiposdejuguetes {
+    display: grid;
+    grid-template-rows: 4, 1fr;
+    grid-template-areas: "sec1 sec1 sec5 sec5" "sec2 sec2 sec6 sec6" "sec3 sec3 sec7 sec7" "sec4 sec4 sec8 sec8";
+    width: 100%;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 20px;
+  }
+}
+@media (max-width: 525px) {
+  .tiposdejuguetes {
+    display: grid;
+    grid-template-rows: 8, 1fr;
+    grid-template-areas: "sec1 sec1 sec1 sec1" "sec2 sec2 sec2 sec2" "sec3 sec3 sec3 sec3" "sec4 sec4 sec4 sec4" "sec5 sec5 sec5 sec5" "sec6 sec6 sec6 sec6" "sec7 sec7 sec7 sec7" "sec8 sec8 sec8 sec8";
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 20px;
+  }
+}
+.games-gallery {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+.games-gallery .card {
+  margin: 0 20px;
+}
+
+@media (max-width: 1100px) {
+  .games-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+  }
+}
+.slider-styles {
+  margin: 30px auto 50px auto;
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .slider-styles {
+    width: 90%;
+  }
+}
+.form-contact {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+  .form-contact {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #090909 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    color: $clubsipink;
+    font-family: "KB Bubblegum", cursive;
+    text-align: center;
+    font-size: 28px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.products-title {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+h2 {
+    border: 3px solid #EDC8DC;
+    border-radius: 40px;
+    width: 900px;
+    text-align: center;
+    color: #EDC8DC;
+    font-family: "Delius Swash Caps", "KB Bubblegum";
+    font-size: 22px;
+    line-height: 0.2;
+    padding: 22px;
+}
+
+
+h3 {
+    font-family: 'KB Bubblegum';
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: double;
+    color: #DFC8E8;
+}
+
+p {
+    font-family: "Delius Swash Caps", "KB Bubblegum";
+    color: #EDC8DC;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+ul {
+    li {
+        font-family: "KB Bubblegum";
+        text-transform: uppercase;
+        color: #DFC8E8;
+
+        a {
+            font-family: "KB Bubblegum";
+            text-transform: uppercase;
+            color: #DFC8E8;
+        }
+    }
+}
+
+span {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#logo {
+    width: 200px;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #090909 !important;
+}
+
+// Animations
+
+.parpadeo {
+    animation: parpadeo-animation 0.8s steps(15, start) infinite, color-animation 2s ease-in-out infinite;
+}
+
+@keyframes parpadeo-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes color-animation {
+    0% {
+        color: #edc8dc;
+    }
+
+    50% {
+        color: #e55aa2;
+    }
+
+    100% {
+        color: #edc8dc;
+    }
+}

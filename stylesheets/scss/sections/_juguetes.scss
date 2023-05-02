@@ -1,0 +1,105 @@
+.sec1 {
+    grid-area: sec1;
+}
+
+.sec2 {
+    grid-area: sec2;
+}
+
+.sec3 {
+    grid-area: sec3;
+}
+
+.sec4 {
+    grid-area: sec4;
+}
+
+.sec5 {
+    grid-area: sec5;
+}
+
+.sec6 {
+    grid-area: sec6;
+}
+
+.sec7 {
+    grid-area: sec7;
+}
+
+.sec8 {
+    grid-area: sec8;
+}
+
+.tiposdejuguetes {
+    color: #EDC8DC;
+    font-family: "KB Bubblegum";
+    text-transform: uppercase;
+    display: grid;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 50px;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "sec1 sec2 sec3 sec4"
+        "sec5 sec6 sec7 sec8";
+}
+
+.categoria-juguetes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.juguetes-sexuales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    h3{
+        margin-top: 20px;
+    }
+}
+
+
+
+@media (max-width: 1100px) {
+    .tiposdejuguetes {
+        display: grid;
+        grid-template-rows: (4, 1fr);
+        grid-template-areas:
+            "sec1 sec1 sec5 sec5"
+            "sec2 sec2 sec6 sec6"
+            "sec3 sec3 sec7 sec7"
+            "sec4 sec4 sec8 sec8";
+        width: 100%;
+        margin-left: 2px;
+        margin-right: 2px;
+        padding: 20px;
+    }
+
+
+}
+
+
+@media (max-width: 525px) {
+    .tiposdejuguetes {
+        display: grid;
+        grid-template-rows: (8, 1fr);
+        grid-template-areas:
+            "sec1 sec1 sec1 sec1"
+            "sec2 sec2 sec2 sec2"
+            "sec3 sec3 sec3 sec3"
+            "sec4 sec4 sec4 sec4"
+            "sec5 sec5 sec5 sec5"
+            "sec6 sec6 sec6 sec6"
+            "sec7 sec7 sec7 sec7"
+            "sec8 sec8 sec8 sec8";
+        margin-left: 2px;
+        margin-right: 2px;
+        padding: 20px;
+    }
+}

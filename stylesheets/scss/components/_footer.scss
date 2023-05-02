@@ -1,0 +1,26 @@
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 170px;
+    padding-top: 30px;
+    border-top: 3px solid #a9a9a969;
+    color: #EDC8DC;
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

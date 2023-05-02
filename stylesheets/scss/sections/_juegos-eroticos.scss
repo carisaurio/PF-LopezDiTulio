@@ -1,0 +1,19 @@
+.games-gallery {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+
+    .card {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .games-gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        align-items: center;
+    }
+}
