@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 1.5rem;
 }
 
 .banner-toys {
@@ -73,11 +74,11 @@
         padding: 22px;
         font-size: 16px;
     }
-
+    
     .mas-vendidos {
         flex-direction: column;
         flex-wrap: nowrap;
     }
 
-    
+
 }

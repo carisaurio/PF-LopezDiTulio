@@ -1,10 +1,9 @@
-@import url("../../recursos/typo/KBbubblegum.ttf");
-
 * {
     margin: 0;
     padding: 0;
 }
 
+  
 html {
     overflow-x: hidden;
 }
@@ -21,18 +20,14 @@ img {
     width: 100%;
 }
 
-@font-face {
-    font-family: KB Bubblegum;
-    src: url("../../recursos/typo/KBbubblegum.ttf");
-}
-
 h1 {
     color: $clubsipink;
-    font-family: KB Bubblegum;
+    font-family: "KB Bubblegum", cursive;
     text-align: center;
     font-size: 28px;
     font-size: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 50px;
+    padding: 10px
 }
 
 .products-title {
@@ -83,7 +78,7 @@ ul {
     }
 }
 
-span {
+.toys-category {
     display: inline-block;
     margin-top: 10px;
 }

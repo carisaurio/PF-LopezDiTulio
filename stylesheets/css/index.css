@@ -3,6 +3,16 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: KB Bubblegum;
+  src: url("../../recursos/typo/KBbubblegum.ttf");
+}
+
+@font-face {
+  font-family: "Delius Swash Caps";
+  src: url("../../recursos/typo/DeliusSwashCaps-Regular.ttf")
+}
+
 html {
   overflow-x: hidden;
 }
@@ -26,21 +36,12 @@ h1 {
   font-size: 28px;
   font-size: 20px;
   margin-bottom: 50px;
+  padding: 10px;
 }
 
 .products-title {
   margin-top: 20px;
   font-size: 30px;
-}
-
-@font-face {
-  font-family: KB Bubblegum;
-  src: url("../../recursos/typo/KBbubblegum.ttf");
-}
-
-@font-face {
-  font-family: "Delius Swash Caps";
-  src: url("../../recursos/typo/DeliusSwashCaps-Regular.ttf");
 }
 
 h2 {
@@ -76,13 +77,14 @@ ul li {
   text-transform: uppercase;
   color: #DFC8E8;
 }
+
 ul li a {
   font-family: "KB Bubblegum";
   text-transform: uppercase;
   color: #DFC8E8;
 }
 
-span {
+.toys-category {
   display: inline-block;
   margin-top: 10px;
 }
@@ -109,28 +111,34 @@ span {
     visibility: hidden;
   }
 }
+
 @keyframes color-animation {
   0% {
     color: #edc8dc;
   }
+
   50% {
     color: #e55aa2;
   }
+
   100% {
     color: #edc8dc;
   }
 }
+
 .form-contact {
   width: 50%;
   margin: auto;
   text-align: center;
 }
+
 .form-contact input {
   margin: 5px;
   border: 1px solid #ec86bd;
   width: 100%;
   text-align: center;
 }
+
 .form-contact input[type=submit] {
   padding: 8px 16px;
   margin-top: 22px;
@@ -144,6 +152,10 @@ span {
   color: var(--bs-btn-hover-color);
   background-color: #dfc8e8;
   border-color: #dfc8e8;
+}
+
+.btn-outline-light {
+  margin-top: 10px;
 }
 
 .btn-outline-success {
@@ -180,9 +192,11 @@ span {
   flex-direction: column;
   align-items: center;
 }
+
 .card-body {
   text-align: center;
 }
+
 .card-body p {
   text-align: center;
   margin: 0px;
@@ -193,12 +207,14 @@ span {
 nav ul {
   color: #EDC8DC;
 }
+
 nav ul a {
   font-family: "KB Bubblegum";
   text-transform: uppercase;
   list-style-type: none;
   color: #EDC8DC;
 }
+
 nav ul li {
   display: inline;
 }
@@ -229,13 +245,19 @@ footer {
   border-top: 3px solid rgba(169, 169, 169, 0.4117647059);
   color: #EDC8DC;
 }
+
 footer ul {
   display: flex;
   justify-content: center;
 }
+
 footer ul li {
   display: inline;
   margin-right: 20px;
+}
+
+#CSfooter {
+  padding: 30px
 }
 
 @media (max-width: 600px) {
@@ -244,6 +266,7 @@ footer ul li {
     align-items: center;
   }
 }
+
 .banner {
   display: block;
   margin: auto;
@@ -253,6 +276,7 @@ footer ul li {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 1.5rem;
 }
 
 .banner-toys {
@@ -261,6 +285,7 @@ footer ul li {
   align-items: center;
   margin: 30px 0px 50px 0;
 }
+
 .banner-toys .links {
   color: #f17cca;
 }
@@ -271,6 +296,7 @@ footer ul li {
   margin: 30px 0 30px 0;
   text-align: center;
 }
+
 .info-inicio :first-child {
   margin-bottom: 30px;
   padding-top: 20px;
@@ -289,32 +315,39 @@ footer ul li {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .mas-vendidos .card {
     flex-basis: 50%;
   }
+
   .banner {
     width: 85%;
   }
+
   .banner-toys {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   h2 {
     width: 80%;
     line-height: 1;
   }
 }
+
 @media (max-width: 525px) {
   h2 {
     padding: 22px;
     font-size: 16px;
   }
+
   .mas-vendidos {
     flex-direction: column;
     flex-wrap: nowrap;
   }
 }
+
 .sec1 {
   grid-area: sec1;
 }
@@ -375,6 +408,7 @@ footer ul li {
   justify-content: space-around;
   align-items: center;
 }
+
 .juguetes-sexuales h3 {
   margin-top: 20px;
 }
@@ -390,6 +424,7 @@ footer ul li {
     padding: 20px;
   }
 }
+
 @media (max-width: 525px) {
   .tiposdejuguetes {
     display: grid;
@@ -400,11 +435,13 @@ footer ul li {
     padding: 20px;
   }
 }
+
 .games-gallery {
   display: flex;
   justify-content: center;
   margin: 50px 0px;
 }
+
 .games-gallery .card {
   margin: 0 20px;
 }
@@ -418,6 +455,7 @@ footer ul li {
     align-items: center;
   }
 }
+
 .slider-styles {
   margin: 30px auto 50px auto;
   width: 70%;
@@ -428,6 +466,7 @@ footer ul li {
     width: 90%;
   }
 }
+
 .form-contact {
   margin-bottom: 40px;
 }
